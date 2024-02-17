@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bias Detector</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-8">
+                <h1 class="text-center mb-4">Bias Detector</h1>
+                <p class="text-center mb-4">This tool analyzes text for bias using OpenAI.</p>
+                <textarea id="text-input" class="form-control mb-3" rows="10" placeholder="Enter text here..."></textarea>
+                <button id="analyze-button" class="btn btn-primary btn-block">Analyze</button>
+                <div id="result" class="mt-4 text-center"></div>
+
+                <!-- Scoring Key Section in a Box -->
+                <div class="card mt-5">
+                    <div class="card-body">
+                        <h3 class="card-title text-center">Scoring Key</h3>
+                        <p class="card-text text-center"><strong>1-2:</strong> Minimal or no bias</p>
+                        <p class="card-text text-center"><strong>3-4:</strong> Slight bias</p>
+                        <p class="card-text text-center"><strong>5-6:</strong> Moderate bias</p>
+                        <p class="card-text text-center"><strong>7-8:</strong> Significant bias</p>
+                        <p class="card-text text-center"><strong>9-10:</strong> Highly biased</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

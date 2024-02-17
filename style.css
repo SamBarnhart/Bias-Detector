@@ -1,0 +1,29 @@
+body {
+    background-color: #f9f9f9;
+}
+
+#text-input,
+#analyze-button,
+#result {
+    border-radius: 15px;  /* This line gives soft edges */
+}
+
+
+
+.card {
+    border: none;  /* This line removes the border */
+    border-radius: 15px;  /* This line rounds the edges */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Optional: This line adds a soft shadow */
+}
+
+
+
+
+#result {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 20px;  /* Adding some padding for better appearance */
+    border: 2px solid #ddd;  /* Adding a border for better appearance */
+}
+
+/* Add any other custom styles here */
